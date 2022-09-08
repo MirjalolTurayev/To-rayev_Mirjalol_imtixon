@@ -1,0 +1,127 @@
+.hero {
+    margin-top: 100px;
+    height: 650px;
+    background-image: url(../../../img/Bitmap\ \(4\).png);
+    background-repeat: no-repeat;
+    background-position: center right -30px;
+    background-size: cover;
+
+    &__box {
+        text-align: center;
+        padding-top: 115px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+        letter-spacing: -1.78571px;
+        color: #FFFFFF;
+    }
+
+    &__copy {
+        font-family: 'Lexend Deca';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-top: 24px;
+    }
+
+    &__link {
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 34px;
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        color: #FFFFFF;
+        border: 3px solid #FCB72B;
+        padding: 14px 39px;
+        background-color: #FCB72B;
+    }
+
+    &__link:hover {
+        background-color: transparent;
+        color: #FCB72B;
+        border: 3px solid #FCB72B;
+    }
+
+    &__link:active {
+        background-color: transparent;
+        color: #FCB72B;
+        border: 3px solid #FCB72B;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .hero {
+        background-position: center right -180px;
+
+        &__box {
+            padding-top: 137px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__title {
+            width: 573px;
+            font-weight: 700;
+            font-size: 56px;
+            line-height: 56px;
+            text-align: center;
+            letter-spacing: -2.5px;
+            color: #FFFFFF;
+        }
+
+        &__copy {
+            width: 573px;
+            font-family: 'Lexend Deca';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .hero {
+        background-position: center;
+        background-size: cover;
+
+        &__box {
+            padding-top: 157px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__title {
+            width: 500px;
+            text-align: start;
+        }
+
+        &__copy {
+            width: 405px;
+            text-align: start;
+            margin-top: 40px;
+            margin-left: 100px;
+        }
+
+        &__link {
+            margin-top: 40px;
+            margin-left: 100px;
+        }
+    }
+}

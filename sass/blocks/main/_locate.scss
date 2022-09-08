@@ -1,0 +1,113 @@
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.locate {
+    &__list {
+        margin-top: 72px;
+        list-style: none;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 48px;
+    }
+
+    &__article {
+        margin-top: 24px;
+    }
+
+    &__subtitle {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: -0.892857px;
+        color: #495567;
+    }
+
+    &__copy {
+        font-family: 'Lexend Deca';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        color: #939CAA;
+        margin-top: 24px;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .locate {
+        &__list {
+            margin-top: 80px;
+        }
+
+        &__item {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            margin-top: 0;
+        }
+
+        &__span {
+            margin-top: 45px;
+        }
+
+        &__article {
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-left: 80px;
+        }
+
+        &__copy {
+            width: 398px;
+            text-align: start;
+            margin-top: 27px;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .locate {
+        &__list {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__article {
+            margin-left: 0;
+        }
+
+        &__copy {
+            width: 350px;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+        }
+    }
+}
